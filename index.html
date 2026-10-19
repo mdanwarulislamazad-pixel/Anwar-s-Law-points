@@ -1,1 +1,264 @@
 
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anwar's Law Points: বাংলাদেশের আইন, আইনের ধারা, ভূমি আইন ও পরীক্ষার প্রস্তুতি সহজ বাংলায়।">
+  <meta name="theme-color" content="#101c32">
+  <title>Anwar's Law Points | আইন জানুন, অধিকার বুঝুন</title>
+  <style>
+    :root {
+      --navy: #101c32;
+      --gold: #d9b66f;
+      --paper: #f6f7fb;
+      --ink: #202b3c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, "Noto Sans Bengali", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 18px 6%;
+    }
+    .brand {
+      color: var(--gold);
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: .92rem;
+    }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      background: var(--navy);
+      color: white;
+      padding: 65px 6% 75px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      line-height: 1.3;
+      margin: 0 0 12px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 24px;
+      color: #dce3ef;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 11px 20px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    main { padding: 34px 6%; max-width: 1100px; margin: auto; }
+    section { margin-bottom: 42px; scroll-margin-top: 20px; }
+    h2 { color: var(--navy); }
+    .search {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccd2dc;
+      border-radius: 8px;
+      font: inherit;
+      background: white;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 17px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e4e7ed;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 16px #101c320a;
+    }
+    .card h3 { margin-top: 0; color: var(--navy); }
+    .card a { color: #805c13; font-weight: 700; }
+    .notice {
+      background: #fff7e6;
+      border-left: 4px solid var(--gold);
+      padding: 15px;
+      border-radius: 5px;
+    }
+    footer {
+      background: var(--navy);
+      color: #e5eaf2;
+      text-align: center;
+      padding: 26px 6%;
+    }
+    footer a { color: var(--gold); }
+    .empty { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#home">⚖ ANWAR'S LAW POINTS</a>
+    <nav aria-label="প্রধান নেভিগেশন">
+      <a href="#home">হোম</a>
+      <a href="#laws">আইন ও ধারা</a>
+      <a href="#exam">পরীক্ষার প্রস্তুতি</a>
+      <a href="#land">ভূমি আইন</a>
+      <a href="#about">পরিচিতি</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <h1>আইন জানুন,<br><span>অধিকার বুঝুন</span></h1>
+    <p>
+      বাংলাদেশের আইন, আইনের বিভিন্ন ধারা, ভূমি আইন
+      এবং পরীক্ষার প্রস্তুতি সম্পর্কে জানুন সহজ বাংলায়।
+    </p>
+    <a class="btn" href="#laws">আইন পড়া শুরু করুন →</a>
+  </div>
+
+  <main>
+    <section id="laws">
+      <h2>📚 আইন ও আইনের ধারা</h2>
+      <p>আপনার প্রয়োজনীয় আইনবিষয়ক বিষয় খুঁজুন।</p>
+      <input class="search" id="search"
+        type="search" placeholder="আইন বা বিষয় লিখে খুঁজুন..."
+        aria-label="আইনবিষয়ক বিষয় খুঁজুন">
+      <div class="grid" id="law-grid" style="margin-top:20px">
+        <article class="card" data-search="penal code ফৌজদারি দণ্ডবিধি 299 300 murder">
+          <h3>দণ্ডবিধি, ১৮৬০</h3>
+          <p>অপরাধ, শাস্তি এবং ২৯৯ ও ৩০০ ধারার পরিচিতি।</p>
+          <a href="https://bdlaws.minlaw.gov.bd/"
+             target="_blank" rel="noopener">মূল আইন দেখুন ↗</a>
+        </article>
+        <article class="card" data-search="specific relief নির্দিষ্ট প্রতিকার আইন 1877">
+          <h3>Specific Relief Act, 1877</h3>
+          <p>সুনির্দিষ্ট প্রতিকার ও দেওয়ানি প্রতিকারের ধারণা।</p>
+          <a href="https://bdlaws.minlaw.gov.bd/"
+             target="_blank" rel="noopener">মূল আইন দেখুন ↗</a>
+        </article>
+        <article class="card" data-search="transfer property সম্পত্তি হস্তান্তর আইন 1882">
+          <h3>Transfer of Property Act, 1882</h3>
+          <p>সম্পত্তি হস্তান্তর, বিক্রয়, দান ও বন্ধক।</p>
+          <a href="https://bdlaws.minlaw.gov.bd/"
+             target="_blank" rel="noopener">মূল আইন দেখুন ↗</a>
+        </article>
+        <article class="card" data-search="land law ভূমি আইন খতিয়ান নামজারি জমি">
+          <h3>ভূমি আইন</h3>
+          <p>খতিয়ান, নামজারি, দলিল ও জমিসংক্রান্ত বিষয়।</p>
+          <a href="https://land.gov.bd/"
+             target="_blank" rel="noopener">ভূমি সেবা দেখুন ↗</a>
+        </article>
+        <article class="card" data-search="bjs exam llb পরীক্ষা প্রস্তুতি">
+          <h3>পরীক্ষার প্রস্তুতি</h3>
+          <p>LL.B. নোট, গুরুত্বপূর্ণ প্রশ্ন ও BJS প্রস্তুতি।</p>
+          <a href="#contact">বিষয় প্রস্তাব করুন ↓</a>
+        </article>
+        <article class="card" data-search="legal rights নাগরিক অধিকার সংবিধান">
+          <h3>নাগরিক অধিকার</h3>
+          <p>সংবিধান, মৌলিক অধিকার ও আইনি সচেতনতা।</p>
+          <a href="https://bdlaws.minlaw.gov.bd/"
+             target="_blank" rel="noopener">আইনভান্ডার দেখুন ↗</a>
+        </article>
+      </div>
+      <p class="empty" id="empty">কোনো বিষয় পাওয়া যায়নি। অন্য শব্দ দিয়ে চেষ্টা করুন।</p>
+    </section>
+
+    <section id="exam">
+      <h2>🎓 শিক্ষার্থীদের জন্য</h2>
+      <div class="card">
+        <h3>আইন শিখুন ধাপে ধাপে</h3>
+        <p>আইনের সংজ্ঞা, গুরুত্বপূর্ণ ধারা, পার্থক্য,
+        উদাহরণ এবং পরীক্ষার উপযোগী নোট দিয়ে শুরু করুন।</p>
+      </div>
+    </section>
+
+    <section id="land">
+      <h2>🏡 ভূমি আইন ও সম্পত্তি</h2>
+      <div class="card">
+        <p>জমি কেনাবেচা, নিবন্ধন, নামজারি ও খতিয়ান সম্পর্কে
+        তথ্য প্রকাশের জন্য এই বিভাগটি তৈরি করা হয়েছে।</p>
+        <a href="https://land.gov.bd/" target="_blank"
+           rel="noopener">বাংলাদেশ ভূমি মন্ত্রণালয় ↗</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>আমাদের সম্পর্কে</h2>
+      <div class="card">
+        <p><strong>Anwar's Law Points</strong> একটি আইনবিষয়ক
+        শিক্ষামূলক ওয়েবসাইটের উদ্যোগ। এর লক্ষ্য হলো বাংলাদেশের
+        আইন সম্পর্কে সহজ ভাষায় তথ্য পৌঁছে দেওয়া।</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>যোগাযোগ ও পরামর্শ</h2>
+      <div class="card">
+        <p>কোনো বিষয় নিয়ে লেখা দেখতে চাইলে আপনার মতামত
+        জানাতে পারেন।</p>
+        <p>আপনার ইমেইল ঠিকানা এখানে যোগ করুন,
+        অথবা আপনার পছন্দের যোগাযোগ মাধ্যম যুক্ত করুন।</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="notice">
+        <strong>আইনি সতর্কতা:</strong> এই ওয়েবসাইটের তথ্য
+        সাধারণ শিক্ষামূলক উদ্দেশ্যে। এটি ব্যক্তিগত আইনি
+        পরামর্শের বিকল্প নয়। প্রকাশের আগে সংশ্লিষ্ট আইনের
+        সর্বশেষ কার্যকর পাঠ যাচাই করুন।
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Anwar's Law Points</p>
+    <p>Know the Law. Know Your Rights.</p>
+    <a href="https://bdlaws.minlaw.gov.bd/" target="_blank"
+       rel="noopener">বাংলাদেশ আইনভান্ডার</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const search = document.getElementById("search");
+    const cards = document.querySelectorAll("#law-grid .card");
+    const empty = document.getElementById("empty");
+
+    search.addEventListener("input", function () {
+      const term = this.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(function (card) {
+        const text =
+          (card.innerText + " " + card.dataset.search).toLowerCase();
+        const match = text.includes(term);
+        card.style.display = match ? "" : "none";
+        if (match) visible++;
+      });
+
+      empty.style.display = visible ? "none" : "block";
+    });
+  </script>
+</body>
+</html>
